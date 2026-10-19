@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday, Miss! 🌿</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SLIDE 1: ENVELOPE -->
+<section class="slide active" id="s1">
+  <div class="clouds"></div>
+  <h1 class="script big">I've got something<br>for you.</h1>
+  <button id="envelope" class="envelope" aria-label="Open envelope"><span class="flap"></span><span class="play">▶</span></button>
+  <p class="hint">tap the envelope, love.</p>
+  <div id="letter" class="overlay hidden">
+    <div class="paper">
+      <h2 class="script">HAPPY BIRTHDAY, MISS NIKKI!! 🥳🎂❤️</h2>
+      <p>Idunno if birthday pa ba nimo if mabasahan ni nimo HAHAHAHA, but never mind. 😭</p>
+      <p>Happy, happy birthday, Miss! I wish you all the best in life. Always be strong, po! If you ever need someone to listen to your rants or anything nga gusto nimo i-share, naa ra akong baby for you, One call away rajd to siya! 🫶🏻❤️</p>
+      <p>Let's play ML again soon, Miss! Makigduwa ra jud ko nimo bisag low rank ka. HAHAHAHAHA :P🎮</p>
+      <p>Happy birthday once again, Miss Nikki!</p>
+      <p class="script sign">— CHANNY</p>
+      <button id="go2" class="btn hidden">Click to Continue</button>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 2: PLANTS VS ZOMBIES -->
+<section class="slide" id="s2">
+  <h2 class="script title">Defend the Garden! 🌱🧟</h2>
+  <div class="seedbar"><div class="packet"><span class="pk"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 70"><path d="M30 68V40" stroke="#2e7d32" stroke-width="6"/><path d="M30 55q-20-2-22-14 14-2 22 14zM30 55q20-2 22-14-14-2-22 14z" fill="#43a047"/><circle cx="28" cy="26" r="18" fill="#7ccf3a"/><circle cx="47" cy="27" r="8" fill="#5fb52a"/><ellipse cx="53" cy="27" rx="4" ry="6" fill="#2d5a14"/><circle cx="23" cy="20" r="5.5" fill="#fff"/><circle cx="25" cy="20" r="2.6" fill="#000"/></svg></span><b>Peashooter</b><em id="pCount">×0</em></div><button id="mute" class="mute" aria-label="Toggle sound">🔊</button></div>
+  <p class="hint dark" id="gameHint">Click the falling Peashooters to catch them, then tap a tile to plant. Defeat all 30 zombies!</p>
+  <div id="sky" class="sky"></div>
+  <div id="stack" class="stack"></div>
+  <div id="board" class="board"><div id="layer" class="layer"></div></div>
+  <button id="go3" class="btn hidden">Click to Continue</button>
+  <div id="bossReminder" class="overlay hidden"><div class="paper"><h2 class="script">Reminder 🌱</h2><p>Pananom sa miss oh hilig mn kaha kag plants</p><button id="go3b" class="btn">Click to Continue</button></div></div>
+  <div id="reminder" class="overlay hidden"><div class="paper"><h2 class="script">Reminder 🌱</h2><p>andeng told me nga nahan kag plants HAHAHAHA SO PLANTS VS ZOMBIE KA SAKIN HAHHAHAHA</p><button id="startGameBtn" class="btn">Okay, let's play!</button></div></div>
+</section>
+
+<!-- SLIDE 3: TREE PLANTING -->
+<section class="slide" id="s3">
+  <h2 class="script title" id="treeTitle">Plant a Tree 🌳</h2>
+  <p class="hint dark" id="treeHint">Tap each soil mound to plant 3 trees: 2 small and 1 big in the middle.</p>
+  <div class="scene" id="scene">
+    <div id="can" class="can hidden">🚿</div>
+    <div id="needle" class="needle hidden">🪡</div>
+    <div class="tree hidden" data-max="1.7" data-start=".4" style="left:20%">🌱</div>
+    <div class="tree hidden" data-max="3.2" data-start=".5" style="left:50%">🌱</div>
+    <div class="tree hidden" data-max="1.7" data-start=".4" style="left:80%">🌱</div>
+    <button class="soil" aria-label="Plant small tree" style="left:20%;width:90px"></button>
+    <button class="soil" aria-label="Plant big tree" style="left:50%"></button>
+    <button class="soil" aria-label="Plant small tree" style="left:80%;width:90px"></button>
+  </div>
+  <div id="sponty" class="sponty hidden">
+    <h2 class="script">Our Sponty Laag in Simala 💚</h2>
+    <div id="spontyGrid" class="grid"></div>
+    <button id="go4" class="btn hidden">Click to Continue</button>
+  </div>
+</section>
+
+<!-- SLIDE: PERIODIC TABLE (after tree planting) -->
+<section class="slide" id="sP">
+  <p class="pname" id="pname">????? ???????</p>
+  <p class="hint dark" id="pmsg">Arrange your name, birthday girl! 🎂 Drag (or tap) the element tiles into the blank slots to spell it</p>
+  <div id="ptable" class="ptable"></div>
+  <div id="ppool" class="ptable pool"></div>
+  <div class="legend" id="legend"></div>
+  <button id="goQuiz" class="btn hidden">Click to Continue</button>
+</section>
+
+<!-- SLIDE 4: QUIZ BEE -->
+<section class="slide" id="s4">
+  <h2 class="script title">Science Quiz Bee 🔬</h2>
+  <div class="card quiz">
+    <div id="qNum" class="qnum"></div>
+    <h3 id="qText"></h3>
+    <div id="qBody"></div>
+    <p id="qMsg" class="msg"></p>
+  </div>
+</section>
+
+<!-- SLIDE 5: FINAL -->
+<section class="slide final" id="s5">
+  <div class="confetti" id="confetti"></div>
+  <h1 class="script huge">Happy Birthday<br>once again, Miss! 🎉</h1>
+  <button id="miniEnv" class="mini-env" aria-label="Open small envelope">💌</button>
+  <div id="finalOverlay" class="overlay hidden">
+    <div class="paper wide">
+      <h2 class="script">Pls kog amping sakong baby 💚</h2>
+      <div id="finalGrid" class="grid"></div>
+      <button id="finalClose" class="btn small">Close ✕</button>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
